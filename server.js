@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   // 設定 CORS 和 JSON 回應標頭
   res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Content-Type", "application/html; charset=utf-8");
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
 
   // Health API
   if (req.url === "/api/health" && req.method === "GET") {
